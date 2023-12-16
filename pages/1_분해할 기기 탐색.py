@@ -1,5 +1,7 @@
 import streamlit as st
 from selenium.webdriver import Chrome
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup 
 import pandas as pd
 import time
@@ -14,7 +16,10 @@ st.subheader("아래의 검색창에 분해할 기기의 명칭을 넣어 보자
 st.divider()
 def get_data_from_youtube(word, scroll=False):
     with st.spinner("분해 영상을 찾고 있습니다. 잠시만 기다려 주세요⏱"):
-        driver = Chrome()
+        options = Options() 
+        options.add_argument("--headless=new")
+        options.add_argument('--disable-gpu')
+        driver = Chrome(options=options)
 
         base_url = "https://www.youtube.com"
         search_word = '/results?search_query=' + word
