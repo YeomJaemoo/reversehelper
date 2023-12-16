@@ -17,38 +17,38 @@ tool = [
     {
         "name": "🔑분해도구세트",
         "type": "사용법 보기",
-        "image": r'images\2.png',
-        "info": r'images\8.png'
+        "image": r'images/2.png',
+        "info": r'images/8.png'
     },
     {
         "name": "🔧드라이버세트",
         "type": "사용법 보기",
-        "image": r"images\3.png",
-        "info": r'images\10.png'
+        "image": r"images/3.png",
+        "info": r'images/10.png'
     },
     {
         "name": "🚏스크린흡입컵",
         "type": "사용법 보기",
-        "image": r"images\4.png",
-        "info": r'images\9.png'
+        "image": r"images/4.png",
+        "info": r'images/9.png'
     },
     {
         "name": "🐱‍🏍히팅기",
         "type": "사용법 보기",
-        "image": r"images\5.png",
-        "info": r'images\11.png'
+        "image": r"images/5.png",
+        "info": r'images/11.png'
     },
     {
         "name": "🥃라이터 오일",
         "type": "사용법 보기",
-        "image": r"images\6.png",
-        "info": r'images\12.png'
+        "image": r"images/6.png",
+        "info": r'images/12.png'
     },
     {
         "name": "✋제전 장갑",
         "type": "사용법 보기",
-        "image": r"images\7.png",
-        "info": r'images\13.png'
+        "image": r"images/7.png",
+        "info": r'images/13.png'
     }
 ]
 
