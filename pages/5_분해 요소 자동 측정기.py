@@ -5,7 +5,7 @@ from object_detector import *
 import base64
 st.title("Measure Object Size")
 st.text("##오류해결이 필요함.")
-st.text("로컬에서는 잘 처리되나 배포할 때 애러가 남. 스트리밍에 대한 해결 후 배포할 예정!")")
+st.text("로컬에서는 잘 처리되나 배포할 때 애러가 남. 스트리밍에 대한 해결 후 배포할 예정!")
 # Load Aruco detector
 parameters = cv2.aruco.DetectorParameters_create()
 aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_5X5_50)
