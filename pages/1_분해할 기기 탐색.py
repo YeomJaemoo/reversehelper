@@ -12,7 +12,7 @@ st.subheader("🔎아래의 검색창에 분해할 기기의 명칭을 넣어 �
 st.divider()
 
 # API 키 입력
-api_key = 'AIzaSyDMXxkKZ4vL0vOW8LbA92tz6s15hhrRn5g'
+api_key=st.secrets['YOUTUBE_API_KEY']
 
 youtube = build('youtube', 'v3', developerKey=api_key)
 
