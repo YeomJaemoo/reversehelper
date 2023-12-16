@@ -3,15 +3,15 @@ import numpy as np
 import streamlit as st
 from object_detector import *
 import base64
-
+st.title("Measure Object Size")
+st.text("##오류해결 후 배포할 예정")
 # Load Aruco detector
 parameters = cv2.aruco.DetectorParameters_create()
 aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_5X5_50)
 
 # Load Object Detector
 detector = HomogeneousBgDetector()
-st.title("Measure Object Size")
-st.text("##오류해결 후 배포할 예정")
+
 # Load Cap
 cap = cv2.VideoCapture(0)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
