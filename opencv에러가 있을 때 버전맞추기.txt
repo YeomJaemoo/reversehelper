@@ -1,0 +1,3 @@
+opencv에러가 있을 때 버전 	맞추기
+
+pip install opencv-contrib-python==4.6.0.66
