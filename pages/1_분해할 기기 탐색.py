@@ -19,7 +19,7 @@ def get_data_from_youtube(word, scroll=False):
         options = Options() 
         options.add_argument("--headless=new")
         options.add_argument('--disable-gpu')
-        driver = Chrome(options=options)
+        driver = webdriver.Chrome(options=options)
 
         base_url = "https://www.youtube.com"
         search_word = '/results?search_query=' + word
