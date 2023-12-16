@@ -10,13 +10,13 @@ aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_5X5_50)
 
 # Load Object Detector
 detector = HomogeneousBgDetector()
-
+st.title("Measure Object Size")
+st.text("##오류해결 후 배포할 예정")
 # Load Cap
 cap = cv2.VideoCapture(0)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 
-st.title("Measure Object Size")
 
 # Create a placeholder for the image
 image_placeholder = st.empty()
