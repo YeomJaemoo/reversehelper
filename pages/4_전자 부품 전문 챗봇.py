@@ -44,9 +44,15 @@ if 'past' not in st.session_state:
 if st.button('기존 체팅 삭제'):
     st.session_state['generated'] = []
     st.session_state['past'] = []
+autocomplete = st.toggle("예시로 채우기를 통해 프롬프트 잘 활용해볼까?")
+example={
+    "prompt": "핸드폰에서 메인보드가 하는 역할을 100자 내외로 말해줘!"
+}
 
 with st.form('form', clear_on_submit=True):
-    user_input = st.text_input('😎전자 부품이 해당 기기에서의 역할은?', '', key='input')
+    user_input = st.text_input('😎전자 부품이 해당 기기에서의 역할은?',
+                               value= example["prompt"] if autocomplete else "",
+                                 key='input')
     submitted = st.form_submit_button('Send')
 
 if submitted and user_input:
