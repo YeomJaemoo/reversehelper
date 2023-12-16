@@ -8,3 +8,4 @@ selenium==4.15.2
 beautifulsoup4==4.12.2
 rembg==2.0.50
 pillow==9.4.0
+google-api-python-client
