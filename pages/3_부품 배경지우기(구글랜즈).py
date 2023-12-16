@@ -4,9 +4,9 @@ from PIL import Image
 from io import BytesIO
 import base64
 
-st.set_page_config(layout="wide", page_title="Image Background Remover")
+st.set_page_config(layout="wide", page_title="배경지우개🖊️")
 
-st.write("## Remove background from your image")
+
 st.sidebar.write("## Upload and download :gear:")
 
 MAX_FILE_SIZE = 5 * 1024 * 1024  # 5MB
@@ -26,8 +26,9 @@ def fix_image(image_bytes):
     return image, fixed
 
 def main():
-    st.title("Google Lens with Streamlit")
-    
+    st.title("😝배경을 지우고 구글랜즈로 기기 찾기!🔭")
+    st.write("## 카메라로 찍거나 이미지를 업로드하고 process Images누르기!")
+    st.write("## 배경이 지워진 이미지를 우클릭하여 구글이미지로 검색! ")
     # 카메라로 이미지를 입력받거나 파일을 업로드하기
     img_file_buffer = st.camera_input("Take a picture")
     uploaded_images = st.sidebar.file_uploader("Upload an image", type=["png", "jpg", "jpeg"], accept_multiple_files=True)
