@@ -1,13 +1,13 @@
 lxml==4.9.3 
 openai==0.28.1
 pandas==2.0.3
-numpy==1.24.3
 streamlit_chat==0.1.1
-opencv-python-headless
 selenium==4.15.2
 beautifulsoup4==4.12.2
 rembg==2.0.50
 pillow==9.4.0
 google-api-python-client
-opencv-contrib-python
 streamlit
+opencv-python-headless
+opencv-contrib-python
+numpy
