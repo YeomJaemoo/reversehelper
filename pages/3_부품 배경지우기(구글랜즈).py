@@ -26,7 +26,7 @@ def fix_image(image_bytes):
     return image, fixed
 
 def main():
-    st.title("😝배경 지우고 구글랜즈로 기기 찾기!🔭")
+    st.title("😝배경 지우고 구글랜즈로 기기 찾기!(초기세팅 시간이 있음ㅠ)🔭")
     st.write("## 카메라로 찍거나 이미지를 업로드하고 process Images누르기!")
     st.write("## 배경이 지워진 이미지를 우클릭하여 구글이미지로 검색! ")
     # 카메라로 이미지를 입력받거나 파일을 업로드하기
