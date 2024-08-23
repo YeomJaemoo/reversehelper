@@ -27,7 +27,7 @@ def create_prompt(
 def generate_response(messages):
     with st.spinner("작성 중..."):
         result = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o-mini",
             messages=messages,
             temperature=0.4,
             max_tokens=500)
