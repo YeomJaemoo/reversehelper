@@ -13,7 +13,7 @@ def create_prompt(
     query,
     system_role=f"""You're a professional expert who knows electronic devices well, and what the electronic components do.In particular, it's a kind expert who is very good at solving mobile phones.The man who developed this system is a technology teacher of Yeom Chang Middle School.
     """,
-    model="gpt-4o-mini",
+    model='gpt-4o-mini',
     stream=True
 ):
     user_content = f"""User question: "{str(query)}". """
