@@ -7,7 +7,7 @@ import base64
 st.set_page_config(layout="wide", page_title="배경지우개🖊️")
 
 
-st.sidebar.write("## Upload and download :gear:")
+st.sidebar.write("## 업로드와 다운로드 :gear:")
 
 MAX_FILE_SIZE = 5 * 1024 * 1024  # 5MB
 
@@ -30,8 +30,8 @@ def main():
     st.write("## 카메라로 찍거나 이미지를 업로드하고 process Images누르기!")
     st.write("## 배경이 지워진 이미지를 우클릭하여 구글이미지로 검색! ")
     # 카메라로 이미지를 입력받거나 파일을 업로드하기
-    img_file_buffer = st.camera_input("Take a picture")
-    uploaded_images = st.sidebar.file_uploader("Upload an image", type=["png", "jpg", "jpeg"], accept_multiple_files=True)
+    img_file_buffer = st.camera_input("사진 찍기")
+    uploaded_images = st.sidebar.file_uploader("이미지 업로드", type=["png", "jpg", "jpeg"], accept_multiple_files=True)
 
     session_state = st.session_state
 
@@ -47,7 +47,7 @@ def main():
         image_bytes = img_file_buffer.getvalue()
         if image_bytes is not None:
             if len(image_bytes) > MAX_FILE_SIZE:
-                st.error("The uploaded file is too large. Please upload an image smaller than 5MB.")
+                st.error("파일이 너무 큽니다. 5MB이하의 파일을 올려주세요.")
             else:
                 original_image, fixed_image = fix_image(image_bytes)
                 new_images.append((original_image, fixed_image))
@@ -59,12 +59,12 @@ def main():
 
             if image_bytes is not None:
                 if len(image_bytes) > MAX_FILE_SIZE:
-                    st.error("The uploaded file is too large. Please upload an image smaller than 5MB.")
+                    st.error("파일이 너무 큽니다. 5MB이하의 파일을 올려주세요.")
                 else:
                     original_image, fixed_image = fix_image(image_bytes)
                     new_images.append((original_image, fixed_image))
 
-    if st.sidebar.button("Process Images"):
+    if st.sidebar.button("이미지처리"):
         # Process Images 버튼을 누르면 새롭게 처리한 이미지만 추가하기
         session_state.processed_images.extend(new_images)
         session_state.last_processed = len(uploaded_images)
