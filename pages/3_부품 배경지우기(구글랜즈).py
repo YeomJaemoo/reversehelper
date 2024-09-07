@@ -80,7 +80,7 @@ def main():
     # 초기화 버튼을 추가하여 상태를 리셋하는 기능 추가
     if st.sidebar.button('초기화'):
         # 처리된 이미지와 마지막 처리된 인덱스 초기화
-        for_in range(2):
+        for _ in range(2):
             session_state.processed_images = []
             session_state.last_processed = 0
             st.experimental_set_query_params()  # 새로고침 효과
