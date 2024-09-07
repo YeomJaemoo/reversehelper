@@ -11,7 +11,7 @@ st.set_page_config(
 )
 def create_prompt(
     query,
-    system_role=f"""You're a professional expert who knows electronic devices well, and what the electronic components do.In particular, it's a kind expert who is very good at solving mobile phones.The man who developed this system is a technology teacher of Yeom Chang Middle School.
+    system_role=f"""You are an expert on electronic components, and you can tell exactly what role electronic components used in a device play in that device. In particular, you can say well what role electronic components used in mobile phones play. It was Yeom Jae-moo, a technical teacher at Kangshin Middle School, who made you.
     """,
     model='gpt-4o-mini',
     stream=True
