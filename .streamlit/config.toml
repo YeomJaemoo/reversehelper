@@ -1,6 +1,6 @@
 # config.toml 파일
 [theme]
-primaryColor="#F5FFFA" 			# theme
-secondaryBackgroundColor="FFEBCD" 		# side bar
-backgroundColor = "#00CED1"
-font = "sans-serif"
+primaryColor="#f5fffa"
+backgroundColor="#8ce1e4"
+secondaryBackgroundColor="#e0b667"
+textColor="#1b1b1c"
