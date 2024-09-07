@@ -82,7 +82,8 @@ def main():
         # 처리된 이미지와 마지막 처리된 인덱스 초기화
         session_state.processed_images = []
         session_state.last_processed = 0
-        st.experimental_rerun()  # 상태가 변경되면 페이지를 새로고침
+        if session_state.has_changed:  # 상태 변경을 확인하는 조건
+            st.rerun()  # 더 이상 experimental 기능이 아닌 기본 제공 함수 사용
 
 if __name__ == "__main__":
     main()
