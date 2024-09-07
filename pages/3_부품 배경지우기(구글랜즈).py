@@ -77,8 +77,6 @@ def main():
         st.sidebar.markdown("")
         st.sidebar.download_button(f"배경제거된 이미지 #{i+1}", convert_image(fixed_image), f"fixed_{i+1}.png", "image/png", key=f"download_button_{i}")
     
-    # 초기화 버튼을 추가하여 상태를 리셋하는 기능 추가
-    import streamlit as st
 
     # 세션 상태 확인 및 초기화
     if 'processed_images' not in st.session_state:
