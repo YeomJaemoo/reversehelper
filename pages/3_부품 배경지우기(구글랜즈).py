@@ -82,6 +82,6 @@ def main():
         # 처리된 이미지와 마지막 처리된 인덱스 초기화
         session_state.processed_images = []
         session_state.last_processed = 0
-
+        st.experimental_rerun()  # 상태가 변경되면 페이지를 새로고침
 if __name__ == "__main__":
     main()
